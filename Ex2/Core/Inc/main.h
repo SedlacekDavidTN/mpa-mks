@@ -68,7 +68,8 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 extern volatile uint32_t Tick;
-void blikac(void);
+void blinker(void);
+void buttons(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
@@ -76,7 +77,6 @@ void blikac(void);
 #define B1_GPIO_Port GPIOC
 #define S2_Pin LL_GPIO_PIN_0
 #define S2_GPIO_Port GPIOC
-#define S2_EXTI_IRQn EXTI0_1_IRQn
 #define S1_Pin LL_GPIO_PIN_1
 #define S1_GPIO_Port GPIOC
 #define USART_TX_Pin LL_GPIO_PIN_2
