@@ -67,7 +67,8 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+extern volatile uint32_t Tick;
+void blikac(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
