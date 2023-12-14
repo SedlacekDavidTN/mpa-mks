@@ -21,9 +21,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "stdio.h"
-#include "string.h"
-#include "stdlib.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -75,6 +75,7 @@ static void uart_process_command(char *cmd) {
 	token = strtok(cmd, " ");
 
 	if (strcasecmp(token, "HELLO") == 0) {
+		printf("Hello World - Test!\n");
 		printf("Communication successful\n");
 	} else if (strcasecmp(token, "LED1") == 0) {
 		token = strtok(NULL, " ");
